@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+<nav>
+	<p>
+		Movie Cruiser
+		<img src="images/logo.jpg" alt="logo">
+		<a href="movie-list-admin.html">Movies</a>
+	</p>
+</nav>
+<section>
+	<h2>Edit Movie</h2>
+	<form name="myForm" onsubmit="return validateForm()" action="edit-movie-status.html">
+		<table>
+			<tr>
+				<td colspan="4">
+					<label for="field-title">Title</label><br>
+					<input type="text" id="field-title" name="title">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="field-boxOffice">Gross ($)</label><br>
+					<input type="text" id="field-boxOffice" name="boxOffice">
+				</td>
+				<td>
+					Active<br>
+					<input type="radio" id="field-active-yes" name="active" value="yes"><label for="field-active-yes"> Yes </label><input type="radio" id="field-active-no" name="active" value="no"><label for="field-active-no"> No</label>
+				</td>
+				<td>
+					<label for="field-dateOfLaunch">Date of Launch</label><br>
+					<input type="text" id="field-dateOfLaunch" name="dateOfLaunch">
+				</td>
+				<td>
+					<label for="field-genre">Genre</label><br>
+					<select id="field-genre" name="genre">
+						<option value=""></option>
+						<option value="sciencefiction">Science Fiction</option>
+						<option value="superhero">Superhero</option>
+						<option value="romance">Romance</option>
+						<option value="comedy">Comedy</option>
+						<option value="adventure">Adventure</option>
+						<option value="thriller">Thriller</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="checkbox" id="field-hasTeaser" name="hasTeaser" value="yes"><label for="field-hasTeaser"> Has Teaser</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" name="submit" value="Save">
+				</td>
+			</tr>
+		</table>
+	</form>
+</section>
+<footer>	
+  <p>Copyright &copy; 2019</p>
+</footer>
+</body>
+</html>
